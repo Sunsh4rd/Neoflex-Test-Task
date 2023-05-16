@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.time.DayOfWeek;
 import java.time.LocalDate;
 
 @RestController
@@ -31,7 +30,7 @@ public class VacationPayController {
             @RequestParam Integer salary,
             @RequestParam(name = "start") @DateTimeFormat(pattern = "dd-MM-yyyy") LocalDate vacationStartDate,
             @RequestParam(name = "end") @DateTimeFormat(pattern = "dd-MM-yyyy") LocalDate vacationEndDate
-            ) {
+    ) {
         return vacationPayService.calculateVacationPay(salary, vacationStartDate, vacationEndDate);
     }
 }
