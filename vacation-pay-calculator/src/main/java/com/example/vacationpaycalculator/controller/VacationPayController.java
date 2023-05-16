@@ -19,7 +19,7 @@ public class VacationPayController {
     private final VacationPayService vacationPayService;
 
 //    @GetMapping("/calculate")
-//    public Integer getVacationPay(
+//    public Integer calculateVacationPay(
 //            @RequestParam Integer salary,
 //            @RequestParam Integer vacationDays
 //    ) {
